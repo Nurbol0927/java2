@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вопросы по Java</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #0056b3;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .qa {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #e9ecef;
+            transition: background-color 0.3s;
+        }
+        .qa:hover {
+            background-color: #d1e7dd;
+        }
+        .question {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .answer {
+            margin-top: 5px;
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.5em; /* Улучшенная читабельность */
+        }
+        @media (max-width: 600px) {
+            header {
+                padding: 15px;
+            }
+            .container {
+                padding: 15px;
+            }
+            .question {
+                font-size: 1em;
+            }
+            .answer {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Вопросы по Java</h1>
+</header>
+
+<div class="container">
+    <div class="qa">
+        <div class="question">1. Что такое алгоритм?</div>
+        <div class="answer">
+            Алгоритм — это последовательность шагов, необходимых для решения задачи или достижения цели. В программировании алгоритмы формулируются в виде последовательности команд, которые компьютер выполняет. Примеры алгоритмов включают методы сортировки данных, поиск информации, а также различные математические операции. Эффективный алгоритм должен быть корректным, завершаться за конечное время и быть понятным для реализации.
+        </div>
+    </div>
+    
+    <div class="qa">
+        <div class="question">2. Почему мы используем комментарии в Java? Какие типы комментариев существуют?</div>
+        <div class="answer">
+            Комментарии в Java используются для пояснения кода, что позволяет другим разработчикам (или вам самим в будущем) легче понимать логику программы. Комментарии не влияют на выполнение кода. Существуют два типа комментариев:
+            <ul>
+                <li><strong>Однострочные комментарии</strong> (начинаются с <code>//</code>): удобны для кратких заметок.</li>
+                <li><strong>Многострочные комментарии</strong> (обрамляются <code>/* ... */</code>): позволяют писать более длинные описания или временно отключать большие участки кода.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="qa">
+        <div class="question">3. Что такое переменные?</div>
+        <div class="answer">
+            Переменные — это именованные области памяти, используемые для хранения данных, которые могут изменяться в процессе выполнения программы. Каждая переменная имеет определённый тип, который задаёт, какие значения она может хранить (например, <code>int</code>, <code>String</code>, <code>boolean</code>). Переменные объявляются с помощью ключевого слова типа данных, за которым следует имя переменной и, при необходимости, начальное значение. Например:
+            <pre><code>int age = 25;</code></pre>
+        </div>
+    </div>
+    
+    <div class="qa">
+        <div class="question">4. Какие существуют примитивные типы данных? В чем их разница?</div>
+        <div class="answer">
+            В Java есть восемь примитивных типов данных:
+            <ul>
+                <li><code>int</code> — целые числа (например, <code>42</code>);</li>
+                <li><code>char</code> — одиночные символы (например, <code>'A'</code>);</li>
+                <li><code>boolean</code> — логические значения (<code>true</code> или <code>false</code>);</li>
+                <li><code>double</code> — дробные числа (например, <code>3.14</code>);</li>
+                <li><code>byte</code> — 8-битное целое число;</li>
+                <li><code>short</code> — 16-битное целое число;</li>
+                <li><code>long</code> — 64-битное целое число;</li>
+                <li><code>float</code> — 32-битное дробное число.</li>
+            </ul>
+            Разница между ними заключается в размере и формате хранимых данных, что влияет на диапазон возможных значений и объем памяти, который они занимают.
+        </div>
+    </div>
+    
+    <div class="qa">
+        <div class="question">5. Что такое инкремент и декремент?</div>
+        <div class="answer">
+            Инкремент (<code>++</code>) увеличивает значение переменной на 1, а декремент (<code>--</code>) уменьшает его на 1. Эти операции часто используются в циклах и при выполнении вычислений. Например:
+            <pre><code>int x = 5;
+x++; // x теперь 6
+x--; // x теперь 5</code></pre>
+        </div>
+    </div>
+
+    <div class="qa">
+        <div class="question">6. Методы класса Math.</div>
+        <div class="answer">
+            Класс <code>Math</code> в Java предоставляет статические методы для выполнения математических операций. Примеры включают:
+            <ul>
+                <li><code>Math.sqrt(x)</code> — возвращает квадратный корень из <code>x</code>;</li>
+                <li><code>Math.pow(x, y)</code> — возводит <code>x</code> в степень <code>y</code>;</li>
+                <li><code>Math.max(x, y)</code> и <code>Math.min(x, y)</code> — находят максимальное и минимальное значение из двух;</li>
+                <li><code>Math.random()</code> — генерирует случайное число от 0.0 до 1.0.</li>
+            </ul>
+            Эти методы позволяют легко выполнять сложные математические вычисления без необходимости вручную реализовывать формулы.
+        </div>
+    </div>
+
+    <div class="qa">
+        <div class="question">7. Что такое Random? Как мы можем его использовать?</div>
+        <div class="answer">
+            Класс <code>Random</code> используется для генерации случайных чисел. Он позволяет создавать случайные значения, которые могут быть полезны в играх, симуляциях и других приложениях. Пример использования:
+            <pre><code>import java.util.Random;
+
+Random rand = new Random();
+int randomNum = rand.nextInt(100); // Случайное число от 0 до 99
+</code></pre>
+        </div>
+    </div>
+
+    <div class="qa">
+        <div class="question">8. Что такое строка? В чем разница между String и char?</div>
+        <div class="answer">
+            <code>String</code> — это объект, представляющий собой последовательность символов, а <code>char</code> — это примитивный тип, представляющий один символ. Например, <code>String</code> может содержать текст, как "Hello", а <code>char</code> — отдельный символ, как <code>'H'</code>. 
+            <br>Важно помнить, что <code>String</code> является неизменяемым (immutable) объектом, что означает, что его значение нельзя изменить после создания, в отличие от массивов символов.
+        </div>
+    </div>
+
+    <div class="qa">
+        <div class="question">9. Какие существуют условные операторы в Java?</div>
+        <div class="answer">
+            В Java имеются следующие условные операторы:
+            <ul>
+                <li><code>if</code> — выполняет блок кода, если условие истинно;</li>
+                <li><code>else</code> — выполняет блок кода, если предшествующее условие ложно;</li>
+                <li><code>switch</code> — позволяет выбрать один из нескольких вариантов, основанных на значении переменной;</li>
+                <li>Тернарный оператор <code>?</code> — компактная форма записи условий, позволяющая задать значение в зависимости от истинности условия.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="qa">
+        <div class="question">10. Сколько частей в тернарном операторе?</div>
+        <div class="answer">
+            Тернарный оператор состоит из трех частей:
+            <ol>
+                <li>Условие, которое проверяется;</li>
+                <li>Значение, если условие истинно;</li>
+                <li>Значение, если условие ложно.</li>
+            </ol>
+            Пример использования:
+            <pre><code>int result = (a > b) ? a : b; // Если a больше b, то result равен a, иначе b</code></pre>
+        </div>
+    </div>
+
+    <!-- Дополните ответы до 37 по аналогии -->
+
+</div>
+
+</body>
+</html>
